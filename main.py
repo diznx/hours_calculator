@@ -4,7 +4,7 @@ targetHours = 83
 
 targetMinutes = 0
 
-totalHours = int(input("How many hours did you have after your last day of work? "))
+totalHours = int(input("How many total hours after last day of work? "))
 
 totalMinutes = int(input("and minutes? "))
 
@@ -12,9 +12,9 @@ remainingHours = targetHours - totalHours
 
 remainingMinutes = 60 - totalMinutes
 
-hourIn = int(input("Now I need the time you clocked in.  What hour was it? "))
+hourIn = int(input("Hour clocked in? "))
 
-minuteIn = int(input("and the minute? "))
+minuteIn = int(input("The minute? "))
 
 hourOut = hourIn + remainingHours
 
@@ -27,4 +27,4 @@ minuteOut = minuteOut % 60
 
 print("The time left you have to work is", remainingHours, "hours and", remainingMinutes, "minutes.")
 
-print("You need to clock out at ", hourOut, ":0", minuteOut, sep="")
+print("You need to clock out at ", hourOut, ":", minuteOut, sep="")
