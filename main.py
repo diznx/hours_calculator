@@ -1,6 +1,6 @@
 print("Hours calculator")
 
-targetHours = 83
+targetHours = 84
 
 totalHours = int(input("How many total hours did you have after last day of work? "))
 totalMinutes = int(input("and minutes? "))
