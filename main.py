@@ -2,22 +2,16 @@ print("Hours calculator")
 
 targetHours = 83
 
-targetMinutes = 0
-
-totalHours = int(input("How many total hours after last day of work? "))
-
+totalHours = int(input("How many total hours did you have after last day of work? "))
 totalMinutes = int(input("and minutes? "))
 
 remainingHours = targetHours - totalHours
-
 remainingMinutes = 60 - totalMinutes
 
 hourIn = int(input("Hour clocked in? "))
-
 minuteIn = int(input("The minute? "))
 
 hourOut = hourIn + remainingHours
-
 minuteOut = minuteIn + remainingMinutes
 
 if minuteOut > 59:
